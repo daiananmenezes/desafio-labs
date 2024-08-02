@@ -1,36 +1,43 @@
 package com.labs.desafio.model;
 
+import java.math.BigDecimal;
 import java.util.List;
 
 public class Order {
-    private int orderId;
-    private String total;
+    private Integer orderId;
+    private BigDecimal total;
     private String date;
-    private List<Produto> produtos;
-    
-	public int getOrderId() {
-		return orderId;
-	}
-	public void setOrderId(int orderId) {
-		this.orderId = orderId;
-	}
-	public String getTotal() {
-		return total;
-	}
-	public void setTotal(String total) {
-		this.total = total;
-	}
-	public String getDate() {
-		return date;
-	}
-	public void setDate(String date) {
-		this.date = date;
-	}
-	public List<Produto> getProdutos() {
-		return produtos;
-	}
-	public void setProdutos(List<Produto> produtos) {
-		this.produtos = produtos;
-	}
+    private List<Product> products;
 
+    public Integer getOrderId() {
+        return orderId;
+    }
+
+    public void setOrderId(Integer orderId) {
+        this.orderId = orderId;
+    }
+
+    public BigDecimal getTotal() {
+        return total;
+    }
+
+    public void setTotal(BigDecimal total) {
+        this.total = total;
+    }
+
+    public String getDate() {
+        return date;
+    }
+
+    public void setDate(String date) {
+        this.date = date;
+    }
+
+    public List<Product> getProducts() {
+        return products;
+    }
+
+    public void setProducts(List<Product> products) {
+        this.products = products;
+    }
 }
